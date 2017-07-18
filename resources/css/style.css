@@ -1,0 +1,73 @@
+html {
+	font-weight: 18px;
+	background-color: lightgrey;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 64px;
+	width: 100%;
+	background-color: white;
+}
+
+.header .logo {
+	padding: 0 24px;
+	display: flex;
+	align-items: center;
+}
+
+.header .logo .bold {
+	font-weight: bold;
+}
+
+.header .logo .light {
+	opacity: 0.5;
+}
+
+.header nav ul {
+	display: flex;
+}
+
+nav li {
+	padding-right: 16px; 
+}
+
+nav li a {
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+}
+
+.banner {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	border: 1px solid black;
+}
+
+.banner img {
+	overflow: hidden;
+	width: 60%;
+	padding: 32px 24px;
+}
+
+.banner .text {
+	padding-left: 16px;
+}
+
+.banner .text h1 {
+	font-size: 3rem;
+}
+
+.banner .text h2 {
+
+}
+
+.banner .text p {
+	background-color: black;
+	color: white;
+	padding: 8px auto;
+	text-align: center;
+}
