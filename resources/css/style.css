@@ -1,5 +1,5 @@
 html {
-	font-weight: 18px;
+	font-weight: 16px;
 	background-color: lightgrey;
 }
 
@@ -7,13 +7,13 @@ html {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	height: 64px;
+	height: 4rem;
 	width: 100%;
 	background-color: white;
 }
 
 .header .logo {
-	padding: 0 24px;
+	padding: 0 1.5rem;
 	display: flex;
 	align-items: center;
 }
@@ -28,13 +28,15 @@ html {
 
 .header nav ul {
 	display: flex;
+	list-style: none;
+	padding: 0 1.5rem;
 }
 
-nav li {
-	padding-right: 16px; 
+.header nav li {
+	padding-left: 1rem; 
 }
 
-nav li a {
+.header nav a {
 	text-decoration: none;
 	color: black;
 	font-weight: bold;
@@ -44,30 +46,132 @@ nav li a {
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
-	border: 1px solid black;
 }
 
 .banner img {
 	overflow: hidden;
 	width: 60%;
-	padding: 32px 24px;
+	padding: 2rem 1.5rem;
 }
 
-.banner .text {
-	padding-left: 16px;
+.banner .text-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	padding-left: 1rem;
 }
 
-.banner .text h1 {
-	font-size: 3rem;
-}
-
-.banner .text h2 {
+.banner .text-container h1 {
 
 }
 
-.banner .text p {
+.banner .text-container h2 {
+
+}
+
+.banner .text-container p {
 	background-color: black;
 	color: white;
-	padding: 8px auto;
+	width: 100%;
+	padding: 0.5rem 0;
 	text-align: center;
+}
+
+
+
+.information {
+	display: flex;
+	background-color: white;
+}
+
+.information .main {
+	display: flex;
+	flex-direction: column;	
+	width: calc(100% - 424px);
+	padding: 2rem 1.5rem;
+}
+
+.information .main img {
+	height: auto;
+	max-width: 100%;
+	padding-bottom: 2rem;
+}
+
+.information .main h1,
+.information .main h3,
+.information .main p {
+	margin: 0 auto 1.5rem 0;
+}
+
+.information .highlights {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	width: 423px;
+	padding-top: 1rem;
+	border: 1px solid lightgrey;
+	border-top: none;
+	border-bottom: none;
+}
+
+.information .highlights .item {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	border: 1px solid lightgrey;
+	border-left: none;
+	border-right: none;
+}
+
+.information .highlights .item img {
+	padding: 1rem;
+	width: 35%;
+}
+.information .highlights .details h2, 
+.information .highlights .details h4 {
+  padding-bottom: 0.5rem;
+}
+
+#guest-lecture {
+	background-color: lightgrey;
+}
+
+.courses {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+
+.course-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.course-container .course {
+	width: 30%;
+	margin: 1rem;
+	background-color: white;
+}
+
+.course-container .course .image {
+	width: 100%;
+}
+
+.course-container .course .image img {
+	width: inherit;
+}
+
+.course-container .course .description {
+	padding: 1rem 1rem 1.5rem 1rem;
+	background-color: white;
+}
+
+.course-container .course .description h2, 
+.course-container .course .description p {
+
 }
