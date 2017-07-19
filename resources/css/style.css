@@ -175,3 +175,83 @@ html {
 .course-container .course .description p {
 
 }
+
+.thesis {
+	background-color: white;
+	border-bottom: 1px solid lightgrey;
+}
+
+.thesis h1 {
+	text-align: center;
+}
+
+.thesis .video-wrapper {
+	display: flex;
+	padding: 2rem 0;
+}
+
+.thesis .video-container {
+	width: calc(100% - 423px);
+	padding: 0 1rem 0 1.5rem;
+}
+
+.thesis .video-container video {
+	width: 100%;
+	padding-bottom: 1.5rem; 
+}
+
+.sidebar {
+	display: flex;
+	justify-content: flex-start;
+	flex-direction: column;
+}
+
+.sidebar .element {
+	display: flex;
+	height: 10.5rem;
+}
+
+.sidebar .element img {
+	padding: 1rem;
+	width: 35%;
+}
+
+.sidebar .element .description {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	padding-right: 1rem;
+}
+
+.sidebar .element .description h2 {
+	font-weight: bold;
+}
+
+#fisma {
+	background-color: lightgrey;
+}
+
+footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: white;
+	color: darkgrey;
+	opacity: 0.7;
+}
+
+footer .copyright {
+	margin: 0 1.5rem;
+}
+
+footer .links {
+	display: flex;
+	justify-content: space-between;
+}
+
+footer .links a {
+	text-decoration: none;
+	margin-right: 1rem; 
+	color: grey;
+}
