@@ -297,7 +297,7 @@ html {
 }
 
 .footer .copyright {
-	margin: 0 1.5rem;
+	padding: 0 1.5rem;
 }
 
 .footer .links {
@@ -309,4 +309,14 @@ html {
 	text-decoration: none;
 	margin-right: 1rem; 
 	color: grey;
+}
+
+@media only screen and (max-width: 480px) {
+	.footer .links {
+		display: none;
+	}
+
+	.footer .copyright {
+		padding: 2.5rem 0 1.5rem 1rem;
+	}
 }
