@@ -1,8 +1,12 @@
-html {
-	font-weight: 16px;
-	background-color: lightgrey;
+html, body {
+	font-size: 16px;
+	background-color: rgb(255, 255, 255);
+	margin: 0;
 }
 
+.bg-color {
+	background-color: rgb(211, 211, 211);
+}
 
 /* header section */
 
@@ -12,7 +16,6 @@ html {
 	align-items: center;
 	height: 4rem;
 	width: 100%;
-	background-color: white;
 }
 
 .header .logo {
@@ -51,7 +54,6 @@ html {
 	align-items: center;
 	height: 4rem;
 	padding: 0 1.5rem;
-	background-color: white;
 }
 
 .header-mobile .icons {
@@ -113,7 +115,7 @@ html {
 
 @media only screen and (max-width: 480px) {
 	.banner {
-		background-color: darkgrey;
+		background-color: rgb(169, 169, 169);
 	}
 
 	.banner img {
@@ -124,7 +126,7 @@ html {
 		width: 100%;
 		margin-top: 11.25rem;
 		padding: 2rem 1rem;
-		background-color: lightgrey;
+		background-color: rgb(211, 211, 211);
 	}
 
 	.banner .text-container h1 {
@@ -136,7 +138,7 @@ html {
 	}
 
 	.banner .text-container .button {
-		background-color: darkgrey;
+		background-color: rgb(169, 169, 169);
 		color: white;
 		width: 100%;
 		margin: 0;
@@ -150,7 +152,6 @@ html {
 
 .information {
 	display: flex;
-	background-color: white;
 }
 
 .information .main {
@@ -179,7 +180,7 @@ html {
 	align-items: center;
 	width: 423px;
 	padding-top: 1rem;
-	border: 1px solid lightgrey;
+	border: 1px solid rgb(211, 211, 211);
 	border-top: none;
 	border-bottom: none;
 }
@@ -188,7 +189,7 @@ html {
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
-	border: 1px solid lightgrey;
+	border: 1px solid rgb(211, 211, 211);
 	border-left: none;
 	border-right: none;
 }
@@ -208,7 +209,7 @@ html {
 }
 
 .information .highlights .item:last-child {
-	background-color: lightgrey;
+	background-color: rgb(211, 211, 211);
 }
 
 @media only screen and (max-width: 480px) {
@@ -298,7 +299,6 @@ html {
 
 .course-container .course .description {
 	padding: 1rem 1rem 1.5rem 1rem;
-	background-color: white;
 }
 
 .course-container .course .description h2, 
@@ -307,7 +307,46 @@ html {
 }
 
 @media only screen and (max-width: 480px) {
+	.courses {
+		background-color: white;
+		padding: 1rem;
+	}
 
+	.course-container {
+		flex-direction: column;
+		flex-wrap: nowrap;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		background-color: white;
+		margin: 0;
+		margin-top: 1rem; 
+	}
+
+	.course-container .course {
+		width: inherit;
+		margin: 0;
+		margin-bottom: 0.5rem;
+		color: black;
+		background-color: rgb(211, 211, 211);
+	}
+
+	.course-container .course .image {
+		display: none;
+	}
+
+	.course-container .course .description {
+		background-color: initial;
+		padding: 0;
+	}
+
+	.course-container .course .description h2 {
+		padding: 1rem;
+	}
+
+	.course-container .course .description p {
+		display: none;
+	}
 }
 
 
@@ -315,13 +354,17 @@ html {
 
 .thesis {
 	background-color: white;
-	border-bottom: 1px solid lightgrey;
+	border-bottom: 1px solid rgb(211, 211, 211);
 	padding-top: 2rem;
 }
 
-.thesis h1 {
+.thesis .desktop-hl {
 	text-align: center;
 	margin: 0;
+}
+
+.thesis .mobile-hl {
+	display: none;
 }
 
 .thesis .video-wrapper {
@@ -372,10 +415,42 @@ html {
 }
 
 #fisma {
-	background-color: lightgrey;
+	background-color: rgb(211, 211, 211);
 }
 
 @media only screen and (max-width: 480px) {
+	.thesis .mobile-hl {
+		display: block;
+		text-align: center;
+		margin: 0;
+	}
+
+	.thesis .desktop-hl {
+		display: none;
+	}
+
+	.thesis .video-wrapper {
+		padding: 2rem 0 1.5rem 0;
+	}
+
+
+	.thesis .video-container {
+		width: 100%;
+		padding: 0;
+	}
+
+	.thesis .video-container video {
+		padding: 0;
+	}
+
+	.thesis .video-container h1,
+	.thesis .video-container p {
+		display: none;
+	}
+
+	.thesis .sidebar {
+		display: none;
+	}
 
 }
 
@@ -387,7 +462,7 @@ html {
 	justify-content: space-between;
 	align-items: center;
 	background-color: white;
-	color: darkgrey;
+	color: rgb(169, 169, 169);
 	opacity: 0.7;
 }
 
@@ -412,6 +487,7 @@ html {
 	}
 
 	.footer .copyright {
-		padding: 2.5rem 0 1.5rem 1rem;
+		padding: 1rem;
+		margin: 0;
 	}
 }
