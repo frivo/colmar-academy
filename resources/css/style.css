@@ -103,12 +103,46 @@ html {
 
 }
 
-.banner .text-container p {
+.banner .text-container .button {
 	background-color: black;
 	color: white;
 	width: 100%;
 	padding: 0.5rem 0;
 	text-align: center;
+}
+
+@media only screen and (max-width: 480px) {
+	.banner {
+		background-color: darkgrey;
+	}
+
+	.banner img {
+		display: none;
+	}
+
+	.banner .text-container {
+		width: 100%;
+		margin-top: 11.25rem;
+		padding: 2rem 1rem;
+		background-color: lightgrey;
+	}
+
+	.banner .text-container h1 {
+		margin: 0;
+	}
+
+	.banner .text-container h2 {
+		margin: 2rem 0 1.5rem 0; 
+	}
+
+	.banner .text-container .button {
+		background-color: darkgrey;
+		color: white;
+		width: 100%;
+		margin: 0;
+		padding: 0.5rem 0;
+		text-align: center;
+	}
 }
 
 
@@ -172,6 +206,10 @@ html {
 	background-color: lightgrey;
 }
 
+@media only screen and (max-width: 480px) {
+
+}
+
 
 /* course section */
 
@@ -216,6 +254,10 @@ html {
 
 .course-container .course .description h2, 
 .course-container .course .description p {
+
+}
+
+@media only screen and (max-width: 480px) {
 
 }
 
@@ -282,6 +324,10 @@ html {
 
 #fisma {
 	background-color: lightgrey;
+}
+
+@media only screen and (max-width: 480px) {
+
 }
 
 
