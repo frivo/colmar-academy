@@ -1,6 +1,6 @@
 html, body {
 	font-size: 16px;
-	font-family: "Roboto", sans-serif;
+	font-family: "Roboto", "Open Sans", sans-serif;
 	color: rgba(0, 0, 0, 0.7);
 	background-color: rgb(255, 255, 255);
 	margin: 0;
@@ -316,7 +316,7 @@ a {
 		align-items: flex-start;
 		flex-direction: column;
 		width: inherit;
-		padding-bottom: 1rem;
+		padding: 0;
 	}
 
 	.information .highlights .item .desktop-img {
@@ -328,16 +328,11 @@ a {
 		width: inherit;
 		height: auto;
 		padding: 0;
+		padding-bottom: 1rem;
 	}
 
 	.information .highlights .details {
 		padding: 0 1rem;
-	}
-
-	.information .highlights .details h2, 
-	.information .highlights .details h4,
-	.information .highlights .details .read-more {
-	  padding: 0;
 	}
 
 	.information .highlights .item:last-child {
@@ -397,6 +392,10 @@ a {
 		padding: 1rem;
 	}
 
+	.courses h1 {
+		padding-top: 1rem; 
+	}
+
 	.course-container {
 		flex-direction: column;
 		flex-wrap: nowrap;
@@ -414,6 +413,10 @@ a {
 		margin-bottom: 0.5rem;
 		color: black;
 		background-color: rgb(211, 211, 211);
+	}
+
+	.course-container .course:last-child {
+		margin-bottom: 1rem;
 	}
 
 	.course-container .course .image {
