@@ -193,21 +193,70 @@ html {
 	border-right: none;
 }
 
-.information .highlights .item img {
+.information .highlights .item .desktop-img {
 	padding: 1rem;
 	width: 35%;
 }
+
+.information .highlights .item .mobile-img {
+	display: none;
+}
+
 .information .highlights .details h2, 
 .information .highlights .details h4 {
   padding-bottom: 0.5rem;
 }
 
-#guest-lecture {
+.information .highlights .item:last-child {
 	background-color: lightgrey;
 }
 
 @media only screen and (max-width: 480px) {
+	.information {
+		padding: 1rem;
+	}
 
+	.information .main {
+		display: none;
+	}
+
+	.information .highlights {
+		border: none;
+		width: 100%;
+	}
+
+	.information .highlights .item {
+		border: none;
+		align-items: flex-start;
+		flex-direction: column;
+		width: inherit;
+		padding-bottom: 1rem;
+	}
+
+	.information .highlights .item .desktop-img {
+		display: none;
+	}
+
+	.information .highlights .item .mobile-img {
+		display: block;
+		width: inherit;
+		height: auto;
+		padding: 0;
+	}
+
+	.information .highlights .details {
+		padding: 0 1rem;
+	}
+
+	.information .highlights .details h2, 
+	.information .highlights .details h4,
+	.information .highlights .details .read-more {
+	  padding: 0;
+	}
+
+	.information .highlights .item:last-child {
+		background-color: initial;
+	}
 }
 
 
