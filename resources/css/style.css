@@ -83,10 +83,15 @@ html, body {
 	align-items: center;
 }
 
-.banner img {
+.banner .img-container {
 	overflow: hidden;
 	width: 60%;
 	padding: 2rem 1.5rem;
+}
+
+.banner .img-container img {
+	width: 100%;
+	height: auto;
 }
 
 .banner .text-container {
@@ -94,7 +99,8 @@ html, body {
 	flex-direction: column;
 	justify-content: center;
 	align-items: flex-start;
-	padding-left: 1rem;
+	width: calc(40% - 3rem);
+	padding: 0 3rem 0 1rem;
 }
 
 .banner .text-container h1 {
@@ -118,7 +124,7 @@ html, body {
 		background-color: rgb(169, 169, 169);
 	}
 
-	.banner img {
+	.banner .img-container {
 		display: none;
 	}
 
@@ -161,10 +167,14 @@ html, body {
 	padding: 2rem 1.5rem;
 }
 
-.information .main img {
-	height: auto;
-	max-width: 100%;
+.information .main .img-container {
+	width: 100%;
 	padding-bottom: 2rem;
+}
+
+.information .main .img-container img {
+	width: inherit;
+	height: auto;
 }
 
 .information .main h1,
